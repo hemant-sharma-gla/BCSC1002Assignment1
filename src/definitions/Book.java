@@ -18,4 +18,29 @@ public class Book {
         this.nameOfTheAuthor = "N. Rao";
         this.ISBNNumber = "9788177228366";
     }
+
+    public String getNameOfTheBook() {
+        return nameOfTheBook;
+    }
+
+    public void setNameOfTheBook(String nameOfTheBook) {
+        this.nameOfTheBook = nameOfTheBook;
+    }
+
+    public String getNameOfTheAuthor() {
+        return nameOfTheAuthor;
+    }
+
+    public void setNameOfTheAuthor(String nameOfTheAuthor) {
+        this.nameOfTheAuthor = nameOfTheAuthor;
+    }
+
+    public String getISBNNumber() {
+        return ISBNNumber;
+    }
+
+    public void setISBNNumber(String ISBNNumber) {
+        this.ISBNNumber = ISBNNumber;
+    }
+
 }
