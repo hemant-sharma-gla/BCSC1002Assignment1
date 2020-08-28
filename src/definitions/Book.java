@@ -43,4 +43,11 @@ public class Book {
         this.ISBNNumber = ISBNNumber;
     }
 
+    //create toString() method to convert the Object to a String.
+
+    public String toString() {
+        return "Name of the book: " + getNameOfTheBook() + ", " +
+                "Name of the author of the book: " + getNameOfTheAuthor() + ", " +
+                "ISBN number of the book: " + getISBNNumber() + ".";
+    }
 }
