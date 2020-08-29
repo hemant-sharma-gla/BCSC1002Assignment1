@@ -7,5 +7,15 @@
 package definitions;
 
 public class Library {
+    private Book[] availableBook;  //Field
+
+    // Create a Constructor for Library class.
+    public Library() {
+        this.availableBook = new Book[6];
+        for (int i = 0; i < availableBook.length; i++) {
+            availableBook[i] = new Book();
+        }
+    }
+
 
 }
