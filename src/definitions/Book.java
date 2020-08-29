@@ -24,6 +24,11 @@ public class Book {
         this.nameOfTheAuthor = nameOfTheAuthor;
         this.ISBNNumber = ISBNNumber;
     }
+    //public Book(String nameOfTheBook) {
+    //  this.nameOfTheBook = nameOfTheBook;
+    //  this.nameOfTheAuthor = "N P Bali";
+    //  this.ISBNNumber = "1234567891234";
+    //}
 
     public String getNameOfTheBook() {
         return nameOfTheBook;
@@ -55,5 +60,22 @@ public class Book {
         return "Name of the book: " + getNameOfTheBook() + ", " +
                 "Name of the author of the book: " + getNameOfTheAuthor() + ", " +
                 "ISBN number of the book: " + getISBNNumber() + ".";
+    }
+
+    /**
+     * create the equals() method.
+     * book1.equals(book2).
+     * book1 : English, book2 : null
+     * book1===> this
+     * book2===> o
+     **/
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
