@@ -17,5 +17,14 @@ public class Library {
         }
     }
 
+    public Library(Book[] availableBook) {
+        this.availableBook = availableBook;
+    }
 
+    // Create a getter method() for private fields.
+
+
+    public Book[] getAvailableBook() {
+        return availableBook.clone();
+    }
 }
