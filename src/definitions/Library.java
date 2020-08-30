@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] availableBook;  //Field
 
@@ -23,8 +25,38 @@ public class Library {
 
     // Create a getter method() for private fields.
 
-
     public Book[] getAvailableBook() {
         return availableBook.clone();
     }
+
+    // Create a setter method()
+    public void setAvailableBook(Book[] availableBook) {
+        this.availableBook = availableBook;
+    }
+    // toString()
+
+    @Override
+    public String toString() {
+        return Arrays.toString(availableBook);
+    }
+
+    // equals() and hashCode() method.
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o) {
+            return false;
+        }
+        Library that = (Library) o;
+        return Arrays.equals(getAvailableBook(), that.getAvailableBook());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getAvailableBook());
+    }
+
 }
